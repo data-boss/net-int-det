@@ -3,7 +3,7 @@ Dataset short description:
 Total number of labeled connections : 1885519
 Normal connections : 1816609
 Attack connections : 68910 (~3.65%)
-Attack types : Bruteforce, Infilterating network from inside, HTTP DoS, DDoS using IRC Botnet, Bruteforce SSH. 
+Attack types with number of instances: Bruteforce (12 june: 2086 + 16 june: 14), Infilterating network from inside (13 june : 20358), HTTP DoS (14 june : 3777), DDoS using IRC Botnet (15 june : 37461), Bruteforce SSH (17 june : 5261). 
 
 1 -- xmlparser.sh: This script extract the connection-wise attributes from the network labeled flows of ISCX datasets.
 Run the following in terminal. 
