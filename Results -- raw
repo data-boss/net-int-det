@@ -23,3 +23,23 @@ Cross validation results f1 scores
  AUC score on the test sets
 [ 1.  1.  1.  1.  1.]
 Elapsed time= 8224.822019577026
+
+Multi-class (six classes) -- Random forest classifiers n_estimators=20,max_depth=3,max_features='log2'
+Cross validation f-1 scores for each train test split. {rows: experiments or iterations, columns: CV folds (4 folds for train, 1 fold for validation)}
+ 0.99998895    1.        0.99993738  1.          0.99999263
+ 0.99999631  1.          0.99996314  0.99998157  0.99997051
+ 0.99999632  1.          0.99972001  0.99999632  0.99998158
+ 0.99998526  0.99998895  0.99932954  1.          1.       
+ 0.99998527  1.          0.99946974  0.99998895  0.99999632
+ Classification report on test sets:
+        Labels     precision   recall  f1-score  support
+
+        Normal       1.00      1.00      1.00    326653
+   botnet-ddos       1.00      1.00      1.00      6720
+    bruteforce       1.00      1.00      1.00       389
+bruteforce-ssh       1.00      1.00      1.00       933
+      http-dos       0.99      1.00      1.00       657
+       insider       1.00      1.00      1.00      3642
+
+   avg / total       1.00      1.00      1.00    338994
+ 
