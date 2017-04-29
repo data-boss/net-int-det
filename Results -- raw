@@ -11,3 +11,15 @@ auc test scores
 [ 0.99999705  0.99999917  0.99998867  0.99998974  0.99998761]
 
 Time elapsed =  1340.7869744300842
+
+SVM with rbf kernel
+Cross validation results f1 scores
+[[ 0.9187295   1.          1.          1.          1.        ]
+ [ 0.9179424   1.          1.          1.          1.        ]
+ [ 0.9185058   1.          1.          1.          1.        ]
+ [ 0.91719532  1.          1.          1.          1.        ]
+ [ 0.91755552  1.          1.          1.          1.        ]]
+ 
+ AUC score on the test sets
+[ 1.  1.  1.  1.  1.]
+Elapsed time= 8224.822019577026
