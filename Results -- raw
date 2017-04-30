@@ -73,3 +73,21 @@ bruteforce-ssh       1.00      1.00      1.00       933
        [     0,      0,      0,    933,      0,      0],
        [     0,      0,      0,      0,    657,      0],
        [     0,      0,      0,      0,      0,   3642]]
+
+Multi-class one vs rest SVM
+cross validation f1 scores
+[ 1.  1.  1.  1.  1.]
+
+Time elapsed =  11754.820420265198
+Classification Report
+
+                precision    recall  f1-score   support
+
+        Normal       1.00      1.00      1.00    326653
+   botnet-ddos       1.00      1.00      1.00      6720
+    bruteforce       1.00      1.00      1.00       389
+bruteforce-ssh       1.00      1.00      1.00       933
+      http-dos       1.00      1.00      1.00       657
+       insider       1.00      1.00      1.00      3642
+
+   avg / total       1.00      1.00      1.00    338994
