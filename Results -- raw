@@ -43,3 +43,33 @@ bruteforce-ssh       1.00      1.00      1.00       933
 
    avg / total       1.00      1.00      1.00    338994
  
+Gradient Boosting multi-class with n_estimators=20, max_depth=3, max_features='log2'
+
+cross validation f1 scores
+[[ 1.          1.          1.          1.          0.99890222]
+ [ 1.          1.          1.          0.99799117  1.        ]
+ [ 1.          1.          1.          1.          1.        ]
+ [ 1.          1.          1.          1.          1.        ]
+ [ 1.          0.99891002  1.          0.99891369  1.        ]]
+
+Time elapsed =  9799.582486391068
+Classification Report
+
+                precision    recall  f1-score   support
+
+        Normal       1.00      1.00      1.00    326653
+   botnet-ddos       1.00      1.00      1.00      6720
+    bruteforce       1.00      1.00      1.00       389
+bruteforce-ssh       1.00      1.00      1.00       933
+      http-dos       1.00      1.00      1.00       657
+       insider       1.00      1.00      1.00      3642
+
+   avg / total       1.00      1.00      1.00    338994
+   
+   Confusion Matrix:
+       [326653,      0,      0,      0,      0,      0],
+       [     0,   6720,      0,      0,      0,      0],
+       [     0,      0,    389,      0,      0,      0],
+       [     0,      0,      0,    933,      0,      0],
+       [     0,      0,      0,      0,    657,      0],
+       [     0,      0,      0,      0,      0,   3642]]
