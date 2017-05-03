@@ -36,4 +36,4 @@ Datasets description:
 For instance X_train=data[seed==0,:-1], X_test=data[seed==1,:-1], Y_train=data[seed==0,-1], Y_test=data[seed==1,-1].
 
 Experiments with binary and multi-class classification:
- 	gbc_multi.py, rfc_binary.py, rfc_multi.py, svm_binary.py , svm_multi.py : These python scripts are used to train and classifiy the network payloads. The deatiled results are given in results -- raw text file.
+ 	gbc_multi.py, rfc_binary.py, rfc_multi.py, svm_binary.py , svm_multi.py : These python scripts are used to train and classifiy the network payloads. The deatiled results are given in Results -- raw text file. In all the experiments the model fit almost perfectly.
