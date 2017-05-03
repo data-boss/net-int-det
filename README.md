@@ -34,3 +34,6 @@ Datasets description:
 
 6. For split in each scenario, all the samples where the corresponding index in seeds is zero would go into training and the ones with seed 1 would be used for testing.
 For instance X_train=data[seed==0,:-1], X_test=data[seed==1,:-1], Y_train=data[seed==0,-1], Y_test=data[seed==1,-1].
+
+Experiments with binary and multi-class classification:
+ 	gbc_multi.py, rfc_binary.py, rfc_multi.py, svm_binary.py , svm_multi.py : These python scripts are used to train and classifiy the network payloads. The deatiled results are given in results -- raw text file.
