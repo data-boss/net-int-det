@@ -1,8 +1,13 @@
 #!/bin/bash
 
-file="$1"
-rd="$(xmlstarlet el "$1" | sed -s -n 2p)"
-xmlstarlet sel -T \
--t -m '$rd' \
--v 'concat(appName;',';totalSourceBytes;',';totalDestinationBytes;',';totalDestinationPackets;',';totalSourcePackets;',';sourcePayloadAsBase64;',';sourcePayloadAsUTF;',';destinationPayloadAsBase64;',';destinationPayloadAsUTF;',';direction;',';sourceTCPFlagsDescription;',';destinationTCPFlagsDescription;',';source;',';protocolName;',';sourcePort;',';destination;',';destinationPort;',';startDateTime;',';stopDateTime;',';Tag)'\ "$1" > $1.csv
+files=`ls *.xml`
+
+for xmlfile in $files
+do
+  xmlstarlet sel -t -v "//sourcePayloadAsBase64" "$xmlfile" > ./work/1.csv
+  xmlstarlet sel -t -v "//destinationPayloadAsBase64" "$xmlfile" >./work/2.csv
+  xmlstarlet sel -t -v "//Tag" "$xmlfile" > ./work/3.csv
+  paste -d, ./work/1.csv ./work/2.csv ./work/3.csv > ./work/$xmlfile.csv
+  rm -rf ./work/{1,2,3}.csv
+done
 
