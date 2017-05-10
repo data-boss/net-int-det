@@ -91,3 +91,24 @@ bruteforce-ssh       1.00      1.00      1.00       933
        insider       1.00      1.00      1.00      3642
 
    avg / total       1.00      1.00      1.00    338994
+
+Results after removing the bug from datasets, cleaning of the empty connections and balancing:
+
+1. RFC- binary
+2. RFC- Multi
+3- SVM binary
+4. SVM multi
+cross validation f1 scores
+[ 0.99219893  0.9926859   0.99276658  0.99268471  0.99284669]
+
+Time elapsed =  24548.39922785759
+Classification Report
+
+             precision    recall  f1-score   support
+
+     Normal       1.00      0.99      1.00      7732
+botnet-ddos       0.99      1.00      1.00      7434
+   http-dos       1.00      0.11      0.20        18
+    insider       0.91      0.91      0.91       196
+
+avg / total       0.99      0.99      0.99     15380
