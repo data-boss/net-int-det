@@ -109,8 +109,10 @@ botnet-ddos       0.99      0.99      0.99      7510
     insider       0.00      0.00      0.00       229
 
 avg / total       0.97      0.94      0.95     15381
-3- SVM binary
-See figure for ROC curves
+3- SVM binary with rbf kernel
+cross validation f1 scores
+[ 0.99309215  0.99284781  0.99366054  0.99301036  0.99455414]
+auc score : 0.996716820542
 4. SVM multi -- with RBF kernel
 cross validation f1 scores
 [ 0.99219893  0.9926859   0.99276658  0.99268471  0.99284669]
