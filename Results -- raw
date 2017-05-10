@@ -95,8 +95,22 @@ bruteforce-ssh       1.00      1.00      1.00       933
 Results after removing the bug from datasets, cleaning of the empty connections and balancing:
 
 1. RFC- binary
+See figure for ROC curves
 2. RFC- Multi
+cross validation f1 scores
+[ 0.87397416  0.8293238   0.93863784  0.81947492  0.83856284]
+
+             precision    recall  f1-score   support
+
+      Label       0.00      0.00      0.00         0
+     Normal       0.97      0.91      0.94      7624
+botnet-ddos       0.99      0.99      0.99      7510
+   http-dos       0.02      0.61      0.03        18
+    insider       0.00      0.00      0.00       229
+
+avg / total       0.97      0.94      0.95     15381
 3- SVM binary
+See figure for ROC curves
 4. SVM multi
 cross validation f1 scores
 [ 0.99219893  0.9926859   0.99276658  0.99268471  0.99284669]
