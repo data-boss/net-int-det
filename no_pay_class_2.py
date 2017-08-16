@@ -18,7 +18,7 @@ del data
 X_tr,X_ts,Y_tr,Y_ts=train_test_split(X,Y,train_size=0.4,test_size=0.2)
 del X
 del Y
-clf=rfc(n_estimators=30,max_depth=2,max_features="auto",class_weight='balanced')
+clf=rfc(n_estimators=20,max_depth=2,max_features="auto",class_weight='balanced')
 clf.fit(X_tr,Y_tr)
 
 y_pred=clf.predict(X_ts)
